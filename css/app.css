@@ -57,9 +57,6 @@ body {
   background: var(--bg-dark);
   color: var(--text);
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -90,6 +87,14 @@ body {
   background: linear-gradient(135deg, #0A0A0F 0%, #0F0F1A 30%, #13131A 60%, #0F0A0A 100%);
   position: relative;
   overflow: hidden;
+}
+
+[data-theme="light"] #landing {
+  background: linear-gradient(135deg, #F5F0EB 0%, #F0EAE0 30%, #EDE5D8 60%, #F5F0EB 100%);
+}
+
+[data-theme="light"] #landing::before {
+  opacity: 0.5;
 }
 
 #landing::before {
